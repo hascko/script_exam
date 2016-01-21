@@ -14,7 +14,7 @@ else
         /bin/mkdir /var/blog/$1.jedi.star/
 
         #Creation du groupe et configuration du fichier sftp_config
-        if /bin/grep -q "groupe_utilisateur" "/etc/group";
+        if /bin/grep -q "jedi" "/etc/group";
         then
                 #Creation de l'utilisateur
                 password=$(/usr/bin/mkpasswd $2)
