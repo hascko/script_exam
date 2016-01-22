@@ -30,6 +30,8 @@ EOF
 
                 /bin/echo "<?php echo 'Bonjour '?> $1" >> /var/blog/$1.jedi.star/index.php
 
+                /bin/chown -R $1:jedi /var/blog/$1.jedi.star/
+
                 #Ajout d'un vhost dans le fichier de configuration
                 /bin/echo "<VirtualHost *:80>" >> /etc/apache2/sites-available/$1.conf
                 /bin/echo "ServerName $1.jedi.star" >> /etc/apache2/sites-available/$1.conf
