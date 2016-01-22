@@ -10,7 +10,7 @@ while :
 do
 
         clear;
-        echo "Bienvenue dans le script master OPENWORLD";
+        echo "Bienvenue dans le script master des JEDI";
         echo " ";
         echo "1-  Création d'un VHOST";
         echo "2-  Suppression d'un VHOST";
