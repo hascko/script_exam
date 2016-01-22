@@ -20,10 +20,10 @@ else
                 #password=$(/usr/bin/mkpasswd $2)
                 /usr/sbin/useradd $1 --shell /usr/bin/mysecureshell --gid 1991 --home /var/blog/$1.jedi.star -m
                 
-                /usr/bin/passwd $1 <<EOF 
-                $2
-                $2
-                EOF
+/usr/bin/passwd $1 <<EOF 
+$2
+$2
+EOF
 
 
                 /usr/bin/touch /var/blog/$1.jedi.star/index.php
