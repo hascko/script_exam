@@ -18,7 +18,7 @@ else
         then
                 #Creation de l'utilisateur
                 #password=$(/usr/bin/mkpasswd $2)
-                /usr/sbin/useradd $1 --shell /usr/bin/MySecureShell --gid 1991 --home /var/blog/$1.jedi.star -m
+                /usr/sbin/useradd $1 --shell /bin/MySecureShell --gid 1991 --home /var/blog/$1.jedi.star -m
                 
 /usr/bin/passwd $1 <<EOF 
 $2
